@@ -12,7 +12,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "innomatic/innomatic-legacy": "dev-develop"
+        "innomatic/innomatic-legacy": "dev-develop",
+        "innomatic/innomatic-core": "dev-develop"
     },
     "extra": {
         "innomatic-legacy-dir": "innomatic_legacy"
