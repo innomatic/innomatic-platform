@@ -2,7 +2,7 @@
 	"name" : "innomatic/innomatic-platform",
 	"description" : "Innomatic Platform",
 	"homepage" : "http://www.innomatic.io",
-	"license" : "New BSD",
+	"license" : "BSD-3-Clause",
 	"minimum-stability" : "dev",
 	"authors" : [{
 			"name" : "Innomatic Team",
