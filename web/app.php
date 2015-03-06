@@ -3,7 +3,7 @@
 use Symfony\Component\ClassLoader\ApcClassLoader;
 use Symfony\Component\HttpFoundation\Request;
 
-$loader = require_once __DIR__.'/../app/bootstrap.php.cache';
+$loader = require_once __DIR__.'/../innomatic/bootstrap.php.cache';
 
 // Enable APC for autoloading to improve performance.
 // You should change the ApcClassLoader first argument to a unique prefix
@@ -15,8 +15,8 @@ $loader->unregister();
 $apcLoader->register(true);
 */
 
-require_once __DIR__.'/../app/InnomaticKernel.php';
-//require_once __DIR__.'/../app/InnomaticCache.php';
+require_once __DIR__.'/../innomatic/InnomaticKernel.php';
+//require_once __DIR__.'/../innomatic/InnomaticCache.php';
 
 $kernel = new InnomaticKernel('prod', false);
 $kernel->loadClassCache();
