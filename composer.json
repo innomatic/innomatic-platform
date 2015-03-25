@@ -17,6 +17,7 @@
 	"require" : {
 		"php" : ">=5.4.4",
 		"innomatic/innomatic-legacy" : "dev-develop",
+		"innomatic/innomatic-legacy-bridge" : "dev-develop",
 		"innomatic/innomatic-core" : "dev-develop",
 		"symfony/symfony" : "2.6.5",
 		"doctrine/orm" : "~2.2,>=2.2.3",
