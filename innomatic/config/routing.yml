@@ -1,0 +1,5 @@
+_InnomaticRoutes:
+    resource: "@InnomaticCoreBundle/Resources/config/routing.yml"
+
+_InnomaticLegacyRoutes:
+    resource: "@InnomaticLegacyBundle/Resources/config/routing.yml"
