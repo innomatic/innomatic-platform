@@ -16,6 +16,8 @@ class InnomaticKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Innomatic\Bundle\InnomaticLegacyBundle\InnomaticLegacyBundle(),
+            new Innomatic\Bundle\InnomaticCoreBundle\InnomaticCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
