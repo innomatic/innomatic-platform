@@ -15,7 +15,7 @@ Innomatic technical documentation: https://innomatic.atlassian.net/wiki/
 To submit a bug report: https://innomatic.atlassian.net/
 
 ## COPYRIGHT
-Copyright (C) 1999-2015 Innomatic. All rights reserved.
+Copyright (C) 1999-2015 Innoteam Srl. All rights reserved.
 
 ## LICENSE
 Innomatic is released under the [New BSD License](https://github.com/innomatic/innomatic-platform/blob/master/LICENSE)
