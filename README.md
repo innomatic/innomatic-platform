@@ -10,9 +10,9 @@ This is the new architecture platform still in development. For development and 
 
 Innomatic Platform official web site: http://www.innomatic.io/
 
-Innomatic technical documentation: http://wiki.innomatic.io/
+Innomatic technical documentation: https://innomatic.atlassian.net/wiki/
 
-To submit a bug report: https://github.com/innomatic/innomatic-platform/issues
+To submit a bug report: https://innomatic.atlassian.net/
 
 ## COPYRIGHT
 Copyright (C) 1999-2015 Innomatic. All rights reserved.
