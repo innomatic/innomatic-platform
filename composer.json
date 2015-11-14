@@ -3,7 +3,7 @@
 	"description" : "Innomatic Platform",
 	"homepage" : "http://www.innomatic.io",
 	"license" : "BSD-3-Clause",
-	"minimum-stability" : "dev",
+	"minimum-stability" : "stable",
 	"authors" : [{
 			"name" : "Innomatic Team",
 			"homepage" : "http://www.innomatic.io"
@@ -16,9 +16,10 @@
 	},
 	"require" : {
 		"php" : ">=5.4.4",
-		"innomatic/innomatic-legacy" : "dev-develop",
-		"innomatic/innomatic-legacy-bridge" : "dev-develop",
-		"innomatic/innomatic-core" : "dev-develop",
+		"innomatic/innomatic-legacy" : "dev-develop@dev",
+		"innomatic/innomatic-legacy-bridge" : "~1.0",
+		"innomatic/innomatic-core" : "dev-develop@dev",
+		"composer/composer": "^1.0@alpha",
 		"symfony/symfony" : "2.6.5",
 		"doctrine/orm" : "~2.2,>=2.2.3",
 		"doctrine/doctrine-bundle" : "~1.2",
@@ -29,7 +30,7 @@
 		"sensio/distribution-bundle" : "~3.0",
 		"sensio/framework-extra-bundle" : "~3.0",
 		"incenteev/composer-parameter-handler" : "~2.0",
-        "wikimedia/composer-merge-plugin": "dev-master"
+        "wikimedia/composer-merge-plugin": "~1.3"
 	},
 	"require-dev" : {
 		"sensio/generator-bundle" : "~2.3",
