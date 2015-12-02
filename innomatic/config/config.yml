@@ -74,3 +74,7 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+innomatic_legacy:
+    enabled: true
+    root_dir: %kernel.root_dir%/../innomatic_legacy
