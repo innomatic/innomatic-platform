@@ -38,5 +38,6 @@
 
 # Innomatic legacy
 /innomatic_legacy/
+/web/shared/
 
 /composer.lock
