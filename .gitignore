@@ -3,6 +3,10 @@
 /innomatic/logs/*
 !innomatic/cache/.gitkeep
 !innomatic/logs/.gitkeep
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
 
 # Cache and logs (Symfony3)
 /var/cache/*
@@ -13,9 +17,12 @@
 # Parameters
 /innomatic/config/parameters.yml
 /innomatic/config/parameters.ini
+/app/config/parameters.yml
+/app/config/parameters.ini
 
 # Managed by Composer
 /innomatic/bootstrap.php.cache
+/app/bootstrap.php.cache
 /var/bootstrap.php.cache
 /bin/*
 !bin/console
@@ -28,6 +35,7 @@
 
 # PHPUnit
 /innomatic/phpunit.xml
+/app/phpunit.xml
 /phpunit.xml
 
 # Build data

@@ -14,7 +14,7 @@
 			"": "src/"
 		},
 		"files": [
-			"innomatic/InnomaticKernel.php"
+			"app/InnomaticKernel.php"
 		]
 	},
 	"require" : {
@@ -65,11 +65,11 @@
 	},
 	"extra" : {
 		"innomatic-legacy-dir" : "innomatic_legacy",
-		"symfony-app-dir" : "innomatic",
+		"symfony-app-dir" : "app",
 		"symfony-web-dir" : "web",
 		"symfony-assets-install" : "relative",
 		"incenteev-parameters" : {
-			"file" : "innomatic/config/parameters.yml"
+			"file" : "app/config/parameters.yml"
 		},
         "merge-plugin": {
             "include": [
