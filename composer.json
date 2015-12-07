@@ -1,6 +1,6 @@
 {
 	"name" : "innomatic/innomatic-platform",
-	"description" : "Innomatic Platform",
+	"description" : "Innomatic Platform distribution",
 	"homepage" : "http://www.innomatic.io",
 	"license" : "GPL-2.0",
 	"minimum-stability" : "stable",
