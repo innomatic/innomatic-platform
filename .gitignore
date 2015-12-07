@@ -1,1 +1,51 @@
+# Cache and logs (Symfony2)
+/innomatic/cache/*
+/innomatic/logs/*
+!innomatic/cache/.gitkeep
+!innomatic/logs/.gitkeep
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+
+# Cache and logs (Symfony3)
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+# Parameters
+/innomatic/config/parameters.yml
+/innomatic/config/parameters.ini
+/app/config/parameters.yml
+/app/config/parameters.ini
+
+# Managed by Composer
+/innomatic/bootstrap.php.cache
+/app/bootstrap.php.cache
+/var/bootstrap.php.cache
+/bin/*
+!bin/console
+!bin/symfony_requirements
 /vendor/
+
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+
+# PHPUnit
+/innomatic/phpunit.xml
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
+
+# Composer PHAR
+/composer.phar
+
+# Innomatic legacy
+/innomatic_legacy/
+/web/shared/
+
+/composer.lock

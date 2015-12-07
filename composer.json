@@ -1,19 +1,80 @@
 {
-    "name": "innomatic/innomatic-platform",
-    "description": "Innomatic Platform",
-    "homepage": "http://www.innomatic.io",
-    "license": "New BSD",
-    "authors": [
-        {
-            "name": "Innomatic Team",
-            "homepage": "http://www.innomatic.io"
+	"name" : "innomatic/innomatic-platform",
+	"description" : "Innomatic Platform distribution",
+	"homepage" : "http://www.innomatic.io",
+	"license" : "GPL-2.0",
+	"minimum-stability" : "stable",
+	"authors" : [{
+			"name" : "Innomatic Team",
+			"homepage" : "http://www.innomatic.io"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"": "src/"
+		},
+		"files": [
+			"app/AppKernel.php"
+		]
+	},
+	"require" : {
+		"php" : ">=5.4.4",
+		"innomatic/innomatic-legacy" : "dev-develop@dev",
+		"innomatic/innomatic-legacy-bridge" : "dev-develop@dev",
+		"innomatic/innomatic-core" : "dev-develop@dev",
+		"composer/composer": "^1.0@alpha",
+		"symfony/symfony" : "2.8.*",
+		"doctrine/orm": "^2.4.8",
+		"doctrine/doctrine-bundle": "~1.4",
+		"twig/extensions" : "~1.0",
+		"symfony/assetic-bundle" : "~2.3",
+		"symfony/swiftmailer-bundle" : "~2.3",
+		"symfony/monolog-bundle" : "~2.4",
+		"sensio/distribution-bundle": "~5.0",
+		"sensio/framework-extra-bundle": "^3.0.2",
+		"incenteev/composer-parameter-handler" : "~2.0",
+        "wikimedia/composer-merge-plugin": "~1.3"
+	},
+	"require-dev" : {
+		"sensio/generator-bundle": "~3.0",
+		"symfony/phpunit-bridge": "~2.7"
+	},
+	"scripts" : {
+		"post-install-cmd" : [
+			"Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+			"Innomatic\\Bundle\\InnomaticLegacyBundle\\Composer\\ScriptHandler::installAssets"
+		],
+		"post-update-cmd" : [
+			"Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+			"Innomatic\\Bundle\\InnomaticLegacyBundle\\Composer\\ScriptHandler::installAssets"
+		]
+	},
+	"config" : {
+		"process-timeout" : 3000,
+		"bin-dir" : "bin"
+	},
+	"extra" : {
+		"innomatic-legacy-dir" : "innomatic_legacy",
+		"symfony-app-dir" : "app",
+		"symfony-web-dir" : "web",
+		"symfony-assets-install" : "relative",
+		"incenteev-parameters" : {
+			"file" : "app/config/parameters.yml"
+		},
+        "merge-plugin": {
+            "include": [
+                "innomatic_legacy/innomatic/core/applications/*/composer.json"
+            ]
         }
-    ],
-    "require": {
-        "php": ">=5.4.0",
-        "innomatic/innomatic-legacy": "*"
-    },
-    "extra": {
-        "innomatic-legacy-dir": "innomatic_legacy"
-    }
+	}
 }
