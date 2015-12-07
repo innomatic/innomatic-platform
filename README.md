@@ -4,8 +4,6 @@ Innomatic is the open source framework for building multi tenant SaaS platforms,
 
 With the Innomatic Platform, ISVs and Enterprises can build Cloud ready, Multi Tenant applications and SaaS products faster and better.
 
-This is the new architecture platform still in development. For development and production purposes you should still use the Innomatic Legacy Platform available at https://github.com/innomatic/innomatic-legacy
-
 ## Additional Information
 
 Innomatic Platform official web site: http://www.innomatic.io/
@@ -18,5 +16,5 @@ To submit a bug report: https://innomatic.atlassian.net/
 Copyright (C) 1999-2015 Innoteam Srl. All rights reserved.
 
 ## LICENSE
-Innomatic is released under the [New BSD License](https://github.com/innomatic/innomatic-platform/blob/master/LICENSE)
+Innomatic is released under the [GPL 2.0 License](https://innomatic.atlassian.net/wiki/display/IMP/Innomatic+License)
 
