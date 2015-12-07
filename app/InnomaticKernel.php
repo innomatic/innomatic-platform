@@ -33,22 +33,4 @@ class InnomaticKernel extends Kernel
     {
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
     }
-
-    public function _getCacheDir()
-    {
-        if (in_array($this->environment, array('dev', 'test'))) {
-            return '/tmp/cache/' .  $this->environment;
-        }
-
-        return parent::getCacheDir();
-    }
-
-    public function _getLogDir()
-    {
-        if (in_array($this->environment, array('dev', 'test'))) {
-            return '/tmp/innomatic/logs';
-        }
-
-        return parent::getLogDir();
-    }
 }
