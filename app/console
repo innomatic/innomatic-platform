@@ -24,6 +24,6 @@ if ($debug) {
     Debug::enable();
 }
 
-$kernel = new InnomaticKernel($env, $debug);
+$kernel = new AppKernel($env, $debug);
 $application = new Application($kernel);
 $application->run($input);

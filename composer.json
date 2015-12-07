@@ -14,7 +14,7 @@
 			"": "src/"
 		},
 		"files": [
-			"app/InnomaticKernel.php"
+			"app/AppKernel.php"
 		]
 	},
 	"require" : {
