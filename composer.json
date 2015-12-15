@@ -21,7 +21,7 @@
 		"php" : ">=5.4.4",
 		"innomatic/innomatic-legacy" : "dev-develop@dev",
 		"innomatic/innomatic-legacy-bridge" : "dev-develop@dev",
-		"innomatic/innomatic-core" : "dev-develop@dev",
+		"innomatic/innomatic" : "dev-develop@dev",
 		"composer/composer": "^1.0@alpha",
 		"symfony/symfony" : "2.8.*",
 		"doctrine/orm": "^2.4.8",
