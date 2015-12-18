@@ -19,9 +19,9 @@
 	},
 	"require" : {
 		"php" : ">=5.4.4",
-		"innomatic/innomatic-legacy" : "dev-master@dev",
-		"innomatic/innomatic-legacy-bridge" : "dev-master@dev",
-		"innomatic/innomatic" : "dev-master@dev",
+		"innomatic/innomatic-legacy" : "~6.5",
+		"innomatic/innomatic-legacy-bridge" : "~1.0",
+		"innomatic/innomatic" : "~7.0",
 		"composer/composer": "^1.0@alpha",
 		"symfony/symfony" : "2.8.*",
 		"doctrine/orm": "^2.4.8",
